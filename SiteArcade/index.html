@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" media="all">
+    <link rel="stylesheet" href="style/mobie.css" media="screen and (max-width: 550px)">
+    <link rel="stylesheet" href="style/tablet.css" media="screen and (min-width: 550px) and (max-width: 800px)">
+    <link rel="stylesheet" href="style/menu.css"  media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Arcade</title>
+</head>
+<body>
+    <header class="mainHeader">
+        <a href="#"><img src="img/logo.png" alt="logo"></a>
+        <nav>
+            <ul class="menu">
+                <li id="liProducts"><a href="#">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Consoles</a></li>
+                        <li><a href="#">Controls</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li id="liLogin"><a href="#">Login</a></li>
+                <li><a class="material-symbols-outlined">add_shopping_cart</a></li>
+            </ul>
+            <button class="material-symbols-outlined" id="btn-mobile" onclick="toggleMenu()">menu</button>
+        </nav>
+    </header>
+    <section class="background-img">
+        <div class="grandiente">
+            <div class="informar">
+                <div id="card">
+                    <p>More Power to Your Gaming</p>
+                    <p id="prominence_cyberKid">CYBER KID INFINITE</p>
+                    <p>Available For PC and Console</p>
+                    <button>Buy Now</button>
+                </div>
+                <div id="card-img">
+                    <img src="img/Cyber_copy.png" alt="image cyber kid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="best-Selling-Product">
+        <header>
+            <h2 class="titles-Section-Products">BEST SELLERS</h2>
+            <button>See more</button>
+        </header>>
+        <div class="wrapper">
+            <i id="left" class="material-symbols-outlined">arrow_back_ios</i>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/anciebtsouls.webp" alt="img">
+                        <p>Anciebt Souls</p>
+                        <span>R$ 199,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/chronoplit.webp" alt="img">
+                        <p>Chronoplit</p>
+                        <span>R$ 199,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/control.webp" alt="img">
+                        <p>Wave</p>
+                        <span>R$ 149,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/keyboard.webp" alt="img">
+                        <p>Keyboard Spartan</p>
+                        <span>R$ 198,89</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/mouse.webp" alt="img">
+                        <p>Mouse Wireles X-2</p>
+                        <span>R$ 124,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/playbox.webp" alt="img">
+                        <p>PlayBox XZ Edição Ouro</p>
+                        <span>R$ 5.000.00</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/wave.webp" alt="img">
+                        <p>Wave Gen RX</p>
+                        <span>R$ 3.479,99</span>
+                        <button>add</button>
+                    </div>
+            <i id="right" class="material-symbols-outlined">arrow_forward_ios</i>
+        </div>
+    </section>
+
+    <section class="category-Section">
+        <h2 class="titles-Section-Products">SEE BY CATEGORY</h2>
+        <div class="group-cards-category">
+            <div class="card-category" id="first-card-category">
+                <img src="img/islands.webp" alt="islands">
+                <p>Islands</p>
+            </div>
+            <div class="card-category">
+                <img src="img/accessories.webp" alt="accessories">
+                <p>Accessories</p>
+            </div>
+            <div class="card-category">
+                <img src="img/controls.webp" alt="controls">
+                <p>Controls</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-Selling-Product">
+        <header>
+            <h2 class="titles-Section-Products">UPGRADE YOUR GEAR</h2>
+            <button>See more</button>
+        </header>>
+        <div class="wrapper">
+            <i id="left" class="material-symbols-outlined">arrow_back_ios</i>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/Headsetl503.webp" alt="img">
+                        <p>Headset L503</p>
+                        <span>R$ 134,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/heasetecho.webp" alt="img">
+                        <p>Headset Echo</p>
+                        <span>R$ 199,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/cadeiragamerimpact.webp" alt="img">
+                        <p>Impact Gamer Chair</p>
+                        <span>R$ 799,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/cadeiragamermach.webp" alt="img">
+                        <p>Mach Gamer Chair</p>
+                        <span>R$ 584,89</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/mousewirelessblaze.webp" alt="img">
+                        <p>Mouse Wireles Sblaze</p>
+                        <span>R$ 124,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/tecladomacanicoco21.webp" alt="img">
+                        <p>Mechanical Keyboard C0-21</p>
+                        <span>R$ 220,90</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/wave.webp" alt="img">
+                        <p>Wave Gen RX</p>
+                        <span>R$ 3.479,99</span>
+                        <button>add</button>
+                    </div>
+            <i id="right" class="material-symbols-outlined">arrow_forward_ios</i>
+        </div>
+    </section>
+
+    <section class="section-spend-earn">
+        <div class="grandiente" id="grandiente-spend-earn">
+            <h2>SPEND AND EARN</h2>
+            <p>Save 20% by spending more than $625</p>
+            <button>Buy Now</button>
+        </div>
+    </section>
+
+    <section class="best-Selling-Product">
+        <header>
+            <h2 class="titles-Section-Products">GAMES ON THE RISE</h2>
+            <button>See more</button>
+        </header>>
+        <div class="wrapper">
+            <i id="left" class="material-symbols-outlined">arrow_back_ios</i>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/cberkidinfinite.webp" alt="img">
+                        <p>Cber Kind Infinite</p>
+                        <span>R$ 199,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/choronospit.webp" alt="img">
+                        <p>Chronosplit</p>
+                        <span>R$ 199,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/icedomeexile.webp" alt="img">
+                        <p>Ice Dome: Exile</p>
+                        <span>R$ 179,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/ancientsouls.webp" alt="img">
+                        <p>Ancient Souls</p>
+                        <span>R$ 198,89</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/kiraandthefading.webp" alt="img">
+                        <p>Kira and Thefading</p>
+                        <span>R$ 179,99</span>
+                        <button>add</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/deadatlast.webp" alt="img">
+                        <p>Dead at Last</p>
+                        <span>R$ 161,90</span>
+                        <button>add</button>
+                    </div>
+            <i id="right" class="material-symbols-outlined">arrow_forward_ios</i>
+        </div>
+    </section>
+
+    <section class="signature-section">
+        <div class="background-one-signature-section">
+            <div id="grandiente">
+                <h2>NEWSLETTER</h2>
+                <p>Subscribe and receive updates on<br>new products and special offers</p>
+                <form action="teste.php">
+                    <label>Email*</label>
+                    <input type="email">
+                    <button>Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="background-two-signature-section">
+            <img src="img/cds.webp" alt="cds">
+        </div>
+    </section>
+
+   <footer>
+    <section class="partonefooter">
+        <div class="card-footer">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="card-footer">
+            <p><strong>Products</strong></p>
+            <p href="#">Games</p>
+            <p href="#">Islands</p>
+            <p href="#">Controls</p>
+            <p href="#">Accessories</p>
+        </div>
+        <div class="card-footer">
+            <p><strong>Store</strong></p>
+            <p href="#">Rua x, 194, neighborhood joão e maria</p>
+            <p href="#">Monday to Friday.: 9:00 to 21:00</p>
+            <p href="#">info@mysite.com</p>
+            <p href="#">(12) 3456 - 7890</p>
+        </div>
+        <div class="card-footer">
+            <p><strong>Policies</strong></p>
+            <p href="#">Terms and Conditions</p>
+            <p href="#">Shipping Policy</p>
+            <p href="#">Refund Policy</p>
+            <p href="#">Cookies Policy</p>
+            <p href="#">FAQ</p>
+        </div>
+    </section>
+    <section class="parttwofooter">
+        <div class="elements-parttwofooter">
+            <p><strong>Join the community</strong></p>
+            <div class="icon">
+                <img src="img/Facebook.png" alt="Facebook">
+                <img src="img/Instagram.png" alt="Instagram">
+                <img src="img/Twitter.png" alt="Twitter">
+                <img src="img/Youtube.png" alt="Youtube">
+            </div>
+            <p>2035 por ARCADE.</p>
+            <p>Proudly created by Leonardo Dantas</p>
+        </div>
+        <div class="elements-parttwofooter">
+            <p>ARCADE - CPF/CNPJ: 12.345.678/0000-01 -<br>Av. Bernardino de Campos, 98  São Paulo, SP 12345-678 - info@meusite.com</p>
+            <p>Phone: (11) 3456-7890</p>
+            <p>Estimated delivery 2 - 5 business days</p>
+        </div>
+        <div class="elements-parttwofooter">
+            <p><strong>Payment Methods</strong></p>
+            <div class="icon">
+                <img src="img/american-express.png" alt="american-express">
+                <img src="img/credit-card.png" alt="credit-card">
+                <img src="img/paypal.png" alt="paypal">
+                <img src="img/visa.png" alt="visa">
+            </div>
+        </div>
+    </section>
+    <section class="partthreefooter">
+        <p>Attention site created by Leonardo Dantasfor school purposes, taking as inspiration the template of the website of the wix.com. So nothing works on the site</p>
+    </section>
+   </footer>
+    <script src="script.js"></script>
+</body>
+</html>
