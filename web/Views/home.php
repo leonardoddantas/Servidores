@@ -48,10 +48,10 @@
                             </div>
                         </li>
                         <?php 
-                            if(!empty($userName)) {
-                                echo "<li><a href='/controlPanel'>$userName</a></li>";
+                            if(!empty($_SESSION['userData'])) {
+                                echo "<li><a href='/controlPanel'>".$_SESSION['userData']['cli_nome']."</a></li>";
                             } else {
-                                echo '<li><a href="web/Views/auth/login.php">Login <span><ion-icon name="person-outline"></ion-icon></span></a></li>';
+                                echo '<li><a href="../../web/Views/auth/login.php">Login <span><ion-icon name="person-outline"></ion-icon></span></a></li>';
                             }
                         ?>
                     </ul>

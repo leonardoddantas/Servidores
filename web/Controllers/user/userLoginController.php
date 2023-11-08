@@ -1,6 +1,8 @@
 <?php
     use sql\Connection;
     use web\Models\UserModel;
+    include('../../Models/UserModel.php');
+    include('../../../sql/Connection.php');
 
     if(!empty($_POST['email']) && !empty($_POST['password']))
     {
@@ -12,11 +14,11 @@
         $user = new UserModel(Connection::getInstance());
         $data = $user->find($email); 
 
-        if ($data && password_verify($password, $data["cli_senha"])) {
+        if ($data && $password == $data["cli_senha"]) {
             $_SESSION['loggedUser'] = true;
             $_SESSION['userData'] = $data;
 
-            require "../../Views/home.php";
+            header('Location: ../../../web/Views/home.php');
         } else {
 
             $incorrectLogin = true;
